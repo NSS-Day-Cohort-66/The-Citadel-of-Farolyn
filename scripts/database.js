@@ -259,15 +259,3 @@ const database = {
     },
   ],
 };
-
-export const getArchetypes = () => {
-  return database.archetypes.map((type) => ({ ...type }));
-};
-
-export const getSchools = () => {
-  return database.schools.map((school) => ({ ...school }));
-};
-
-export const getBooks = () => {
-  return database.books.map((book) => ({ ...book }));
-};

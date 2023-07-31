@@ -2,9 +2,6 @@
   text-align: center;
 }
 
-#body {
-}
-
 #lists_container {
   display: flex;
   justify-content: space-evenly;
