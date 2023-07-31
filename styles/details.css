@@ -1,14 +1,44 @@
-.details {
+#title {
+  text-align: center;
+}
+
+#body {
+}
+
+#lists_container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.detail--column {
-  flex-basis: 24%;
-  margin: 0 2rem;
-  border: 1px dotted goldenrod;
+#lists_container > div {
+  flex-basis: 25%;
 }
 
-.assignments {
-  padding: 1rem 5rem;
+#schools_container {
+  border: 1px solid;
+  padding: 3rem;
+}
+
+#archetypes_container {
+  border: 1px solid;
+  padding: 3rem;
+}
+
+#archetypes_container > ul {
+  columns: 2;
+}
+
+#details_container {
+  margin: 3rem 12rem 0rem;
+  border: 1px solid;
+  padding: 1rem;
+}
+
+#message {
+  text-align: center;
+}
+
+li {
+  cursor: pointer;
 }
