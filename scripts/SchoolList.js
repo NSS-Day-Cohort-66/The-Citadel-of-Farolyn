@@ -1,16 +1,21 @@
-import { getSchools } from "./database.js";
+document.addEventListener("click", (clickEvent) => {
+  const schoolClicked = clickEvent.target;
 
-const schools = getSchools();
+  if (schoolClicked.dataset.type === "school") {
+    const detailsHtml = `
+      <div>
+        <h4>Description:</h4>
+        <h4>Disclaimer:</h4>
+        <h4>Currently accepting the following Magician Types:</h4>
+      </div>
+    `;
+  }
+});
 
 export const SchoolList = () => {
-  let headerHtml = `<div>`;
+  let headerHtml = `<div id="schools_container" class="content_block">`;
   headerHtml += `<h3>Magic Schools:</h3>`;
-  headerHtml += `<ul>`;
-  for (const school of schools) {
-    headerHtml += `<li class="option" data-type="school" data-id="${school.id}">${school.name}</li>`;
-  }
-  headerHtml += `</ul>`;
+
   headerHtml += `</div>`;
-  
   return headerHtml;
 };

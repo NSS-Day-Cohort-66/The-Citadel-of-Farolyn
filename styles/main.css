@@ -1,5 +1,8 @@
+@import "reset.css";
 @import "details.css";
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+
 
 /*Typography
 --------------------------------------------------------------*/
@@ -22,5 +25,4 @@ h5,
 h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
-  margin-left: 1rem;
 }
