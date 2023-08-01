@@ -26,18 +26,18 @@ document.addEventListener("click", (clickEvent) => {
     const detailsContainer = document.querySelector("#details_container");
     detailsContainer.innerHTML = `
     <div>
-      <h4>Greeting:</h4>
-        ${typeClicked.dataset.greeting}
-      <h4>School:</h4>
-        ${typeSchool.name}
-      <h4>Study Book:</h4>
-        ${studyBook.name}
+      <h3>Greeting:</h3>
+        <p>${typeClicked.dataset.greeting}</p>
+      <h3>School:</h3>
+        <p>${typeSchool.name}</p>
+      <h3>Study Book:</h3>
+        <p>${studyBook.name}</p>
     </div>`;
   }
 });
 
 export const TypeList = () => {
-  let headerHtml = `<div id="archetypes_container">`;
+  let headerHtml = `<div id="archetypes_container" class="content_block">`;
   headerHtml += `<h3>Magician Types:</h3>`;
   headerHtml += `<ul>`;
   for (const type of archetypes) {

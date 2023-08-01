@@ -24,18 +24,18 @@ document.addEventListener("click", (clickEvent) => {
     const detailsContainer = document.querySelector("#details_container");
     detailsContainer.innerHTML = `
     <div>
-      <h4>Description:</h4>
-      ${schoolClicked.dataset.description}
-      <h4>Disclaimer:</h4>
-      ${schoolClicked.dataset.disclaimer}
-      <h4>Currently accepting the following Magician Types:</h4>
-      ${archetypesList}
+      <h3>Description:</h3>
+      <p>${schoolClicked.dataset.description}</p>
+      <h3>Disclaimer:</h3>
+      <p>${schoolClicked.dataset.disclaimer}</p>
+      <h3>Currently accepting the following Magician Types:</h3>
+      <p>${archetypesList}</p>
     </div>`;
   }
 });
 
 export const SchoolList = () => {
-  let headerHtml = `<div id="schools_container">`;
+  let headerHtml = `<div id="schools_container" class="content_block">`;
   headerHtml += `<h3>Magic Schools:</h3>`;
   headerHtml += `<ul>`;
   for (const school of schools) {
