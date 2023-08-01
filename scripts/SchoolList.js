@@ -13,7 +13,7 @@ document.addEventListener("click", (clickEvent) => {
 });
 
 export const SchoolList = () => {
-  let headerHtml = `<div id="schools_container">`;
+  let headerHtml = `<div id="schools_container" class="content_block">`;
   headerHtml += `<h3>Magic Schools:</h3>`;
 
   headerHtml += `</div>`;
